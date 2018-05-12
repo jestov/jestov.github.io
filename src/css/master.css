@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+}
+*:focus{
+  outline:0;
+}
+body{
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+main{
+  margin: 1vh;
+  min-height: 98vh;
+  background: #16a085;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+main h1{
+  font-size: 50px;
+}
+main h1 a{
+  color: #2c3e50;
+  text-decoration: none;
+}
+main h1 a:hover{
+  border-bottom: 5px solid #2c3e50;
+}
