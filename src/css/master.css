@@ -98,7 +98,7 @@ main #button:hover{
   text-transform: uppercase;
   background: #16a085;
   min-width: 85px;
-  margin: 0 4px;
+  margin: 3px 4px;
 }
 .github {
   font-size: 2rem;
@@ -106,4 +106,22 @@ main #button:hover{
   top: .5em;
   right: .7em;
   color: #2c3e50;
+}
+@media all and (max-width: 600px) {
+  #projects{
+    flex-direction: column;
+  }
+  #projects .half{
+    width: 100%;
+  }
+  #projects .half.image{
+    height: 45vh;
+  }
+  #projects .half.image img{
+    height: 100%;
+  }
+  #projects .half.title{
+    min-height: 55vh;
+    padding: 30px 15px;
+  }
 }
