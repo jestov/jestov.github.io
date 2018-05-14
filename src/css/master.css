@@ -19,9 +19,11 @@ main{
   justify-content: center;
   color: #fff;
   text-align: center;
+  flex-direction: column;
 }
 main h1{
   font-size: 50px;
+  order:1;
 }
 main h1 a{
   color: #2c3e50;
@@ -29,4 +31,79 @@ main h1 a{
 }
 main h1 a:hover{
   border-bottom: 5px solid #2c3e50;
+}
+main #button{
+  text-decoration: none;
+  color: rgba(52, 73, 94,1);
+  font-size: 15px;
+  position: absolute;
+  bottom: 4rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+}
+main #button:hover{
+  border-bottom: 1px solid rgba(52, 73, 94,0.2);
+}
+#projects{
+  min-height: 98vh;
+  margin: 1vh;
+  background: rgba(236, 240, 241,1.0);
+  display: flex;
+  flex-direction: row;
+}
+/*#projects .half.image:hover img{
+  opacity: 0.55;
+}*/
+#projects .half{
+  width: 50%;
+}
+#projects .half.image img{
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+#projects .half.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 70px;
+}
+#projects .half.title h2{
+  font-size: 40px;
+  margin: 0;
+}
+#projects .half.title h2 a{
+  color: #2c3e50;
+  text-decoration: none;
+}
+#projects .half.title h2 a:hover{
+  border-bottom: 1px solid rgba(52, 73, 94,0.05);
+}
+#projects .half.title h3{
+  color: #2c3e50;
+  font-weight: 200;
+  font-size: 20px;
+  margin: 25px 0;
+}
+#projects .half.title a.btn{
+  padding: 8px 16px;
+  border-radius: 45px;
+  border: none;
+  display: inline-block;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  background: #16a085;
+  min-width: 85px;
+  margin: 0 4px;
+}
+.github {
+  font-size: 2rem;
+  position: fixed;
+  top: .5em;
+  right: .7em;
+  color: #2c3e50;
 }
