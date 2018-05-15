@@ -61,7 +61,7 @@ main #button:hover{
   width: 100%;
   min-height: 100%;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.95;
 }
 #projects .half.title{
   display: flex;
@@ -71,8 +71,9 @@ main #button:hover{
   padding: 70px;
 }
 #projects .half.title h2{
-  font-size: 40px;
+  font-size: 60px;
   margin: 0;
+  line-height: 60px;
 }
 #projects .half.title h2 a{
   color: #2c3e50;
@@ -88,7 +89,7 @@ main #button:hover{
   margin: 25px 0;
 }
 #projects .half.title a.btn{
-  padding: 8px 16px;
+  padding: 10px 30px;
   border-radius: 45px;
   border: none;
   display: inline-block;
@@ -96,9 +97,17 @@ main #button:hover{
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  background: #16a085;
-  min-width: 85px;
+  min-width: 112px;
   margin: 3px 4px;
+}
+#projects .half.title a.btn.light{
+  background: #16a085;
+}
+#projects .half.title a.btn.dark{
+  background: #2c3e50;
+}
+#projects .half.title .icon{
+  font-size: 20px;
 }
 .github {
   font-size: 2rem;
@@ -107,7 +116,7 @@ main #button:hover{
   right: .7em;
   color: #2c3e50;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 680px) {
   #projects{
     flex-direction: column;
   }
@@ -123,5 +132,14 @@ main #button:hover{
   #projects .half.title{
     min-height: 55vh;
     padding: 30px 15px;
+  }
+  #projects .half.title h2{
+    font-size: 40px;
+  }
+}
+@media all and (min-width:681px){
+  #projects .half.image img{
+    -webkit-clip-path:polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
   }
 }
