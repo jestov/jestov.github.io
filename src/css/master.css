@@ -5,32 +5,56 @@
   outline:0;
 }
 body{
-  background: #fff;
+  background: #eee;
   padding: 0;
   margin: 0;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+.logo{
+  width: 45px;
+  height: 45px;
+  color:#fff;
+  background: #2c3e50;
+  font-size: 29px;
+  position: fixed;
+  top:1rem;
+  left: 1rem;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  z-index: 2;
 }
 main{
   margin: 1vh;
   min-height: 98vh;
-  background: #16a085;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #16a085;
   text-align: center;
   flex-direction: column;
 }
 main h1{
-  font-size: 50px;
+  font-size: 65px;
   order:1;
+  margin: 0;
+  line-height: 1;
+}
+main h2{
+  order: 2;
+  margin: 18px auto;
+  font-weight: 300;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #666;
 }
 main h1 a{
   color: #2c3e50;
   text-decoration: none;
 }
 main h1 a:hover{
-  border-bottom: 5px solid #2c3e50;
+  border-bottom: 3px solid rgba(52, 73, 94,0.2);
 }
 main #button{
   text-decoration: none;
@@ -40,6 +64,7 @@ main #button{
   bottom: 4rem;
   text-transform: uppercase;
   border-bottom: 1px solid transparent;
+  font-weight: 300;
 }
 main #button:hover{
   border-bottom: 1px solid rgba(52, 73, 94,0.2);
@@ -47,7 +72,7 @@ main #button:hover{
 #projects{
   min-height: 98vh;
   margin: 1vh;
-  background: rgba(236, 240, 241,1.0);
+  background: #fff;
   display: flex;
   flex-direction: row;
 }
@@ -83,10 +108,11 @@ main #button:hover{
   border-bottom: 1px solid rgba(52, 73, 94,0.05);
 }
 #projects .half.title h3{
-  color: #2c3e50;
-  font-weight: 200;
-  font-size: 20px;
+  color: #666;
+  font-weight: 300;
+  font-size: 18px;
   margin: 25px 0;
+  font-family: 'IBM Plex Sans','Poppins',sans-serif;
 }
 #projects .half.title a.btn{
   padding: 10px 30px;
@@ -99,6 +125,8 @@ main #button:hover{
   text-transform: uppercase;
   min-width: 112px;
   margin: 3px 4px;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 #projects .half.title a.btn.light{
   background: #16a085;
@@ -115,8 +143,19 @@ main #button:hover{
   top: .5em;
   right: .7em;
   color: #2c3e50;
+  z-index: 1;
 }
 @media all and (max-width: 680px) {
+  main h1{
+    font-size: 40px;
+  }
+  main h2{
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  main #button{
+    font-size: 14px;
+  }
   #projects{
     flex-direction: column;
   }
@@ -128,6 +167,8 @@ main #button:hover{
   }
   #projects .half.image img{
     height: 100%;
+    -webkit-clip-path:polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
   }
   #projects .half.title{
     min-height: 55vh;
@@ -135,6 +176,9 @@ main #button:hover{
   }
   #projects .half.title h2{
     font-size: 40px;
+  }
+  #projects .half.title a.btn{
+    margin: 4px 2px;
   }
 }
 @media all and (min-width:681px){
