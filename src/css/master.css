@@ -69,52 +69,52 @@ main #button{
 main #button:hover{
   border-bottom: 1px solid rgba(52, 73, 94,0.2);
 }
-#projects{
+.projects{
   min-height: 98vh;
   margin: 1vh;
   background: #fff;
   display: flex;
   flex-direction: row;
 }
-/*#projects .half.image:hover img{
+/*.projects .half.image:hover img{
   opacity: 0.55;
 }*/
-#projects .half{
+.projects .half{
   width: 50%;
 }
-#projects .half.image img{
+.projects .half.image img{
   width: 100%;
   min-height: 100%;
   object-fit: cover;
   opacity: 0.95;
 }
-#projects .half.title{
+.projects .half.title{
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   padding: 70px;
 }
-#projects .half.title h2{
+.projects .half.title h2{
   font-size: 60px;
   margin: 0;
   line-height: 60px;
 }
-#projects .half.title h2 a{
+.projects .half.title h2 a{
   color: #2c3e50;
   text-decoration: none;
 }
-#projects .half.title h2 a:hover{
+.projects .half.title h2 a:hover{
   border-bottom: 1px solid rgba(52, 73, 94,0.05);
 }
-#projects .half.title h3{
+.projects .half.title h3{
   color: #666;
   font-weight: 300;
   font-size: 18px;
   margin: 25px 0;
   font-family: 'IBM Plex Sans','Poppins',sans-serif;
 }
-#projects .half.title a.btn{
+.projects .half.title a.btn{
   padding: 10px 30px;
   border-radius: 45px;
   border: none;
@@ -128,13 +128,13 @@ main #button:hover{
   font-weight: 300;
   letter-spacing: 1px;
 }
-#projects .half.title a.btn.light{
+.projects .half.title a.btn.light{
   background: #16a085;
 }
-#projects .half.title a.btn.dark{
+.projects .half.title a.btn.dark{
   background: #2c3e50;
 }
-#projects .half.title .icon{
+.projects .half.title .icon{
   font-size: 20px;
 }
 .github {
@@ -174,33 +174,33 @@ footer a:hover{
   main #button{
     font-size: 14px;
   }
-  #projects{
+  .projects{
     flex-direction: column;
   }
-  #projects .half{
+  .projects .half{
     width: 100%;
   }
-  #projects .half.image{
+  .projects .half.image{
     height: 45vh;
   }
-  #projects .half.image img{
+  .projects .half.image img{
     height: 100%;
     -webkit-clip-path:polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
   }
-  #projects .half.title{
+  .projects .half.title{
     min-height: 55vh;
     padding: 30px 15px;
   }
-  #projects .half.title h2{
+  .projects .half.title h2{
     font-size: 40px;
   }
-  #projects .half.title a.btn{
+  .projects .half.title a.btn{
     margin: 4px 2px;
   }
 }
 @media all and (min-width:681px){
-  #projects .half.image img{
+  .projects .half.image img{
     -webkit-clip-path:polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
   }
