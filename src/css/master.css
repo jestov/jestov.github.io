@@ -76,9 +76,6 @@ main #button:hover{
   display: flex;
   flex-direction: row;
 }
-/*.projects .half.image:hover img{
-  opacity: 0.55;
-}*/
 .projects .half{
   width: 50%;
 }
@@ -86,7 +83,6 @@ main #button:hover{
   width: 100%;
   min-height: 100%;
   object-fit: cover;
-  opacity: 0.95;
 }
 .projects .half.title{
   display: flex;
