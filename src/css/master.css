@@ -6,7 +6,7 @@
     outline:0;
 }
 body{
-    background: #111;
+    background: #222;
     padding: 0;
     margin: 0;
     font-family: 'Inter UI', sans-serif;
@@ -19,7 +19,7 @@ body{
     text-decoration: none;
     text-align: center;
     z-index: 3;
-    background: #000;
+    background: #111;
     left: calc(50% - 37.25px);
     width: 75px;
     font-weight: 300;
@@ -27,7 +27,7 @@ body{
 main{
     margin: 2vh;
     min-height: 96vh;
-    background: #000;
+    background: #111;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -99,7 +99,7 @@ main #button:hover{
     filter: grayscale(0);
 }
 .project:hover .title{
-    background: rgba(0,0,0,0.9);
+    background: rgba(10,10,10,0.9);
 }
 .project img{
     width: 100%;
@@ -120,7 +120,7 @@ main #button:hover{
     height: 100%;
     position: absolute;
     z-index: 2;
-    background: rgba(0,0,0,0.96);
+    background: rgba(10,10,10,0.96);
 }
 .project .title h2{
     font-size: 30px;
