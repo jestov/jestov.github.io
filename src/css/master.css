@@ -23,11 +23,6 @@ a{
 .logo img{
     border-radius: 50%;
 }
-.logo span{
-    display: inline-block;
-    float: left;
-    margin-top: 12px;
-}
 main{
     margin: 2vh;
     min-height: 96vh;
