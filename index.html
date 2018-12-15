@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="src/css/master.min.css">
   <body>
     <a href="https://github.com/jestov" class="github">
-      <i class="icon ion-social-github"></i>
+      <i class="icon ion-logo-github"></i>
     </a>
     <main>
         <div class="logo">
             <img src="src/img/avatar.svg" height="50">
         </div>
+        <i class="icon ion-md-sunny switch light"></i>
+        <i class="icon ion-md-moon switch dark" hidden></i>
         <h1>Hello.<br>I'm <a href="https://github.com/jestov">jestov_</a></h1>
         <h2>A Big fan of Web Development, always thinking<br>about to create creative stuff.</h2>
     </main>
@@ -87,9 +89,26 @@
             </div>
         </div>
         <footer>
-          Made with <i class="icon ion-heart"></i> by <a href="https://github.com/jestov">jestov</a>
+          Made with <i class="icon ion-md-heart"></i> by <a href="https://github.com/jestov">jestov</a>
         </footer>
     </div>
-    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script>
+        const light = document.querySelector('.light');
+        const dark = document.querySelector('.dark');
+        const main = document.querySelector('body');
+        light.addEventListener("click", function(){
+            light.hidden = true;
+            main.classList.remove('dark-theme');
+            main.classList.add('light-theme');
+            dark.hidden = false;
+        });
+        dark.addEventListener("click", function(){
+            dark.hidden = true;
+            main.classList.remove('light-theme');
+            main.classList.add('dark-theme');
+            light.hidden = false;
+        });
+    </script>
   </body>
 </html>
