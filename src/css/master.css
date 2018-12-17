@@ -5,11 +5,14 @@
 *:focus{
     outline:0;
 }
+html { font-family: 'Inter UI', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter UI var alt', sans-serif; }
+}
 body{
     background: #222;
     padding: 0;
     margin: 0;
-    font-family: 'Inter UI', sans-serif;
 }
 a{
     color: #10ac84;
