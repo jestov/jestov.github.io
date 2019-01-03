@@ -271,6 +271,7 @@ details[open] .container{
     z-index: 1;
     margin-right: 0;
     margin-top: 0;
+    background-color: #000;
     background-position: center;
     background-size: cover;
     flex-wrap: wrap;
@@ -538,6 +539,9 @@ body.light-theme .container a{
 }
 body.light-theme .container a:hover{
     background: rgba(255,255,255,0.9);
+}
+body.light-theme .container-header{
+    background-color: #ddd;
 }
 body.light-theme .container-header::after {
     background: rgba(240,240,240,0.5);
