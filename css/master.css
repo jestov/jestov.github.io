@@ -271,7 +271,7 @@ details[open] .container{
     z-index: 1;
     margin-right: 0;
     margin-top: 0;
-    background-color: #000;
+    background-color: #111;
     background-position: center;
     background-size: cover;
     flex-wrap: wrap;
