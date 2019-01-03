@@ -539,9 +539,6 @@ body.light-theme .container a{
 body.light-theme .container a:hover{
     background: rgba(255,255,255,0.9);
 }
-body.light-theme .container-header{
-    background: rgba(10,10,10,0.5);
-}
 body.light-theme .container-header::after {
     background: rgba(240,240,240,0.5);
 }
