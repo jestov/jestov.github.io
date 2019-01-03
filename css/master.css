@@ -156,13 +156,13 @@ main #button:hover{
   transition: all 0.8s ease;
 }
 .card .card-body *{
-    right: -28px;
+    right: -58px;
     position: relative;
 }
 .card .card-body:hover{
     background: rgba(10,10,10,0.4);
 }
-.card .card-body:hover h2 a{
+.card .card-body:hover h2{
     color: #10ac84;
 }
 .card .card-body h2{
@@ -172,8 +172,6 @@ main #button:hover{
     writing-mode: vertical-rl;
     margin: 0;
     letter-spacing: -5px;
-}
-.card .card-body h2 a{
     color: transparent;
     text-decoration: none;
     -webkit-text-stroke: 1px #10ac84;
@@ -188,18 +186,6 @@ main #button:hover{
     font-size: 14px;
     margin: 5px 0;
     line-height: 1;
-}
-.card .card-body a.btn{
-    border: none;
-    display: inline-block;
-    font-size: 13px;
-    text-decoration: none;
-    color: #10ac84;
-    margin: 3px 4px;
-    font-weight: 600;
-}
-.card .card-body a.btn:hover{
-    opacity: 0.9;
 }
 .card .card-body .icon{
     font-size: 20px;
@@ -435,8 +421,8 @@ footer a:hover{
         right: 0;
     }
     .card .card-body h2{
-        font-size: 35px;
-        letter-spacing: -1px;
+        font-size: 45px;
+        letter-spacing: -2px;
     }
     .github{
         top: 20px;
@@ -457,11 +443,6 @@ footer a:hover{
     footer{
         padding: 4vh;
         text-align: center;
-    }
-    .container .container-header{
-        width: 100%;
-        padding: 10px;
-        margin: 0;
     }
     .close{
         top: 25px;
@@ -501,7 +482,11 @@ footer a:hover{
     }
     .container .container-header{
         justify-content: center;
-        align-items: flex-end;
+        align-content: flex-end;
+        padding: 10px;
+        min-height: 70vh;
+        margin: 10px;
+        width: calc(100% - 20px);
     }
 }
 
@@ -553,7 +538,7 @@ body.light-theme .container h2{
     color: #111;
 }
 body.light-theme .container h3{
-    color: #666;
+    color: #333;
 }
 body.light-theme .dark-screen{
     background: #eee;
