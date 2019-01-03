@@ -551,6 +551,9 @@ body.light-theme .main-title{
 body.light-theme .container h2{
     color: #111;
 }
+body.light-theme .container h3{
+    color: #666;
+}
 body.light-theme .dark-screen{
     background: #eee;
     color: #444;
