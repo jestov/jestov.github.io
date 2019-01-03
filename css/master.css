@@ -17,6 +17,9 @@ body{
 a{
     color: #10ac84;
 }
+.scroll-hidden{
+    overflow: hidden;
+}
 .logo{
     position: fixed;
     top: 30px;

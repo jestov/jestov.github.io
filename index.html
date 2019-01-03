@@ -8,6 +8,7 @@
     <link rel="icon" href="img/avatar.svg">
     <title>jestov - Big fan of web development</title>
     <link rel="stylesheet" href="css/master.css">
+</head>
   <body>
     <div class="logo">
         <img src="img/avatar.svg" height="70">
@@ -417,8 +418,13 @@
         });
         const details = document.querySelectorAll('details');
         const close = document.querySelectorAll('.close');
+        const summaries = document.querySelectorAll('details summary');
         close.forEach(el => el.addEventListener("click", function(){
             details.forEach(det => det.open = false);
+            main.classList.remove('scroll-hidden');
+        }));
+        summaries.forEach(sum => sum.addEventListener("click", function(){
+            main.classList.add('scroll-hidden');
         }));
     </script>
   </body>
