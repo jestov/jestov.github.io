@@ -7,98 +7,393 @@
     <link rel="shortcut icon" href="img/avatar.svg">
     <link rel="icon" href="img/avatar.svg">
     <title>jestov - Big fan of web development</title>
-    <link rel="stylesheet" href="css/master.min.css">
+    <link rel="stylesheet" href="css/master.css">
   <body>
+    <div class="logo">
+        <img src="img/avatar.svg" height="70">
+    </div>
     <a href="https://github.com/jestov" class="github">
-      <i class="icon ion-logo-github"></i>
+        <i class="icon ion-logo-github"></i>
     </a>
+    <i class="icon ion-md-sunny switch light"></i>
+    <i class="icon ion-md-moon switch dark" hidden></i>
     <main>
-        <div class="logo">
-            <img src="img/avatar.svg" height="50">
-        </div>
-        <i class="icon ion-md-sunny switch light"></i>
-        <i class="icon ion-md-moon switch dark" hidden></i>
         <h1>Hello.<br>I'm <a href="https://github.com/jestov">jestov_</a></h1>
         <h2>A Big fan of Web Development, always thinking<br>about to create creative stuff.</h2>
     </main>
     <div class="box">
-        <div id="gg" class="card">
-            <img src="img/gg.jpeg">
-            <div class="card-body">
-              <h2><a href="/grid-gallery">Grid Gallery</a></h2>
-              <h3>A simple and light Grid Gallery</h3>
-              <div>
-                <a href="/grid-gallery" class="btn">Demo</a>
-                <a href="https://github.com/jestov/grid-gallery" class="btn">GitHub</a>
-              </div>
+        <details id="gg" class="card">
+            <summary>
+                <img src="img/gg.jpeg">
+                <div class="card-body">
+                  <h2><a href="/grid-gallery">Grid<br>Gallery</a></h2>
+                </div>
+            </summary>
+            <div class="close">
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
-        </div>
-        <div id="cool-navbars" class="card">
-            <img src="img/cool-navbars.jpeg">
-            <div class="card-body">
-              <h2><a href="/cool-navbars">Cool Navbars</a></h2>
-              <h3>A collection of Navbars</h3>
-              <div>
-                <a href="/cool-navbars" class="btn">Demo</a>
-                <a href="https://github.com/jestov/cool-navbars" class="btn">GitHub</a>
-              </div>
+            <div class="container">
+                <div class="container-header" style="background:url(img/gg-1.jpeg);background-size:cover;background-blend-mode:soft-light;">
+                    <div class="main-title">
+                        <h2>Grid Gallery</h2>
+                        <h3>A simple and light Grid Gallery</h3>
+                    </div>
+                    <div class="buttons">
+                      <a href="/grid-gallery" class="btn">See Demo</a>
+                      <a href="https://github.com/jestov/grid-gallery" class="btn">See on GitHub</a>
+                    </div>
+                </div>
+                <div class="container-body">
+                    <div class="dark-screen">
+                        <p>
+                            Grid Gallery was born as a solution for websites that need a simple and functional gallery without the need for dependencies such as jQuery.
+                        </p>
+                    </div>
+                    <div class="dark-screen">
+                        <div class="box-info">
+                            <span class="title">Type</span>
+                            <span class="description">Open Source</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">In</span>
+                            <span class="description">May 2018</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">Exploring</span>
+                            <span class="description">CSS Grid, Native JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="container-footer">
+                        <img src="img/gg-2.jpeg" alt="">
+                        <img src="img/gg-3.jpeg" alt="">
+                        <div class="buttons">
+                            <a href="/grid-gallery" class="btn">See Demo</a>
+                            <a href="https://github.com/jestov/grid-gallery" class="btn">See on GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="universe" class="card">
-            <img src="img/universe.jpeg">
-            <div class="card-body">
-              <h2><a href="/universe">Universe</a></h2>
-              <h3>A HTML Template as storytelling</h3>
-              <div>
-                <a href="/universe" class="btn">Demo</a>
-                <a href="https://github.com/jestov/universe" class="btn">GitHub</a>
-              </div>
+        </details>
+        <details id="cool-navbars" class="card">
+            <summary>
+                <img src="img/cool-navbars.jpeg">
+                <div class="card-body">
+                  <h2><a href="/cool-navbars">Cool<br>Navbars</a></h2>
+                </div>
+            </summary>
+            <div class="close">
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
-        </div>
-        <div id="dark" class="card">
-            <img src="img/dark.jpeg">
-            <div class="card-body">
-              <h2><a href="/dark">Dark</a></h2>
-              <h3>A HTML Website Template</h3>
-              <div>
-                <a href="/dark" class="btn">Demo</a>
-                <a href="https://github.com/jestov/dark" class="btn">GitHub</a>
-              </div>
+            <div class="container">
+                <div class="container-header" style="background:url(img/cool-navbars.jpeg) bottom;background-size:cover;background-blend-mode:soft-light;">
+                    <div class="main-title">
+                        <h2>Cool Navbars</h2>
+                        <h3>A collection of Navbars</h3>
+                    </div>
+                    <div class="buttons">
+                      <a href="/cool-navbars" class="btn">See Demo</a>
+                      <a href="https://github.com/jestov/cool-navbars" class="btn">See on GitHub</a>
+                    </div>
+                </div>
+                <div class="container-body">
+                    <div class="dark-screen">
+                        <p>
+                            Cool Navbars is a collection of simple and elegant Navbars with indicators that have an CSS class for active link. In addition, for the presentation of the Navbars, two scripts were used, one for Tabs and the other for Scrollspy.
+                        </p>
+                    </div>
+                    <div class="dark-screen">
+                        <div class="box-info">
+                            <span class="title">Type</span>
+                            <span class="description">Open Source</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">In</span>
+                            <span class="description">December 2018</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">Exploring</span>
+                            <span class="description">CSS, Native JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="container-footer">
+                        <img src="img/cool-navbars-1.jpeg" alt="">
+                        <img src="img/cool-navbars-2.jpeg" alt="">
+                        <img src="img/cool-navbars-3.jpeg" alt="">
+                        <div class="buttons">
+                            <a href="/cool-navbars" class="btn">See Demo</a>
+                            <a href="https://github.com/jestov/cool-navbars" class="btn">See on GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="polygon" class="card">
-            <img src="img/polygon.jpeg">
-            <div class="card-body">
-              <h2><a href="/polygon">Polygon</a></h2>
-              <h3>A HTML Website Template</h3>
-              <div>
-                <a href="/polygon" class="btn">Demo</a>
-                <a href="https://github.com/jestov/polygon" class="btn">GitHub</a>
-              </div>
+        </details>
+        <details id="universe" class="card">
+            <summary>
+                <img src="img/universe.jpeg">
+                <div class="card-body">
+                  <h2><a href="/universe">Universe</a></h2>
+                </div>
+            </summary>
+            <div class="close">
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
-        </div>
-        <div id="games" class="card">
-            <img src="img/games.jpeg">
-            <div class="card-body">
-              <h2><a href="/games">Games</a></h2>
-              <h3>A HTML Website Template</h3>
-              <div>
-                <a href="/games" class="btn">Demo</a>
-                <a href="https://github.com/jestov/games" class="btn">GitHub</a>
-              </div>
+            <div class="container">
+                <div class="container-header" style="background:url(img/universe.jpeg);background-size:cover;background-blend-mode:soft-light;">
+                    <div class="main-title">
+                        <h2>Universe</h2>
+                        <h3>A HTML Template as storytelling</h3>
+                    </div>
+                    <div class="buttons">
+                      <a href="/universe" class="btn">See Demo</a>
+                      <a href="https://github.com/jestov/universe" class="btn">See on GitHub</a>
+                    </div>
+                </div>
+                <div class="container-body">
+                    <div class="dark-screen">
+                        <p>
+                            Universe is an HTML template as storytelling. During the creation of it I discovered new properties of CSS.
+                        </p>
+                    </div>
+                    <div class="dark-screen">
+                        <div class="box-info">
+                            <span class="title">Type</span>
+                            <span class="description">Open Source</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">In</span>
+                            <span class="description">2018</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">Exploring</span>
+                            <span class="description">CSS: Scroll Behavior, Native JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="container-footer">
+                        <img src="img/universe-1.jpeg" alt="">
+                        <img src="img/universe-2.jpeg" alt="">
+                        <img src="img/universe-3.jpeg" alt="">
+                        <div class="buttons">
+                            <a href="/universe" class="btn">See Demo</a>
+                            <a href="https://github.com/jestov/universe" class="btn">See on GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="css-f" class="card">
-            <img src="img/css-f.jpeg">
-            <div class="card-body">
-              <h2><a href="/css-filters">CSS Filters</a></h2>
-              <h3>An experiment with blur filter of CSS as background</h3>
-              <div>
-                <a href="/css-filters" class="btn">Demo</a>
-                <a href="https://github.com/jestov/css-filters" class="btn">GitHub</a>
-              </div>
+        </details>
+        <details id="dark" class="card">
+            <summary>
+                <img src="img/dark.jpeg">
+                <div class="card-body">
+                  <h2><a href="/dark">Dark</a></h2>
+                </div>
+            </summary>
+            <div class="close">
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
-        </div>
+            <div class="container">
+                <div class="container-header" style="background:url(img/dark.jpeg);background-size:cover;background-blend-mode:soft-light;">
+                    <div class="main-title">
+                        <h2>Dark</h2>
+                        <h3>A HTML Website Template</h3>
+                    </div>
+                    <div class="buttons">
+                      <a href="/dark" class="btn">See Demo</a>
+                      <a href="https://github.com/jestov/dark" class="btn">See on GitHub</a>
+                    </div>
+                </div>
+                <div class="container-body">
+                    <div class="dark-screen">
+                        <p>
+                            Dark is an HTML template. I wanted to make a website using only the black color and this was the result.
+                        </p>
+                    </div>
+                    <div class="dark-screen">
+                        <div class="box-info">
+                            <span class="title">Type</span>
+                            <span class="description">Open Source</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">In</span>
+                            <span class="description">June 2018</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">Exploring</span>
+                            <span class="description">CSS</span>
+                        </div>
+                    </div>
+                    <div class="container-footer">
+                        <img src="img/dark-1.jpeg" alt="">
+                        <img src="img/dark-2.jpeg" alt="">
+                        <img src="img/dark-3.jpeg" alt="">
+                        <div class="buttons">
+                            <a href="/dark" class="btn">See Demo</a>
+                            <a href="https://github.com/jestov/dark" class="btn">See on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details id="polygon" class="card">
+            <summary>
+                <img src="img/polygon.jpeg">
+                <div class="card-body">
+                  <h2><a href="/polygon">Polygon</a></h2>
+                </div>
+            </summary>
+            <div class="close">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="container">
+                <div class="container-header" style="background:url(img/polygon.jpeg);background-size:cover;background-blend-mode:soft-light;">
+                    <div class="main-title">
+                        <h2>Polygon</h2>
+                        <h3>A HTML Website Template</h3>
+                    </div>
+                    <div class="buttons">
+                      <a href="/polygon" class="btn">See Demo</a>
+                      <a href="https://github.com/jestov/polygon" class="btn">See on GitHub</a>
+                    </div>
+                </div>
+                <div class="container-body">
+                    <div class="dark-screen">
+                        <p>
+                            Polygon is an HTML template. I was trying new ways to make a navbar and during its creation I discovered the CSS property: clip-path.
+                        </p>
+                    </div>
+                    <div class="dark-screen">
+                        <div class="box-info">
+                            <span class="title">Type</span>
+                            <span class="description">Open Source</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">In</span>
+                            <span class="description">June 2018</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">Exploring</span>
+                            <span class="description">CSS</span>
+                        </div>
+                    </div>
+                    <div class="container-footer">
+                        <img src="img/polygon-1.jpeg" alt="">
+                        <img src="img/polygon-2.jpeg" alt="">
+                        <div class="buttons">
+                            <a href="/polygon" class="btn">See Demo</a>
+                            <a href="https://github.com/jestov/polygon" class="btn">See on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details id="games" class="card">
+            <summary>
+                <img src="img/games.jpeg">
+                <div class="card-body">
+                  <h2><a href="/games">Games</a></h2>
+                </div>
+            </summary>
+            <div class="close">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="container">
+                <div class="container-header" style="background:url(img/games.jpeg);background-size:cover;background-blend-mode:soft-light;">
+                    <div class="main-title">
+                        <h2>Games</h2>
+                        <h3>A HTML Website Template</h3>
+                    </div>
+                    <div class="buttons">
+                      <a href="/games" class="btn">See Demo</a>
+                      <a href="https://github.com/jestov/games" class="btn">See on GitHub</a>
+                    </div>
+                </div>
+                <div class="container-body">
+                    <div class="dark-screen">
+                        <p>
+                            Games is an HTML template. It was born as part of a university school work.
+                        </p>
+                    </div>
+                    <div class="dark-screen">
+                        <div class="box-info">
+                            <span class="title">Type</span>
+                            <span class="description">Open Source</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">In</span>
+                            <span class="description">June 2018</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">Exploring</span>
+                            <span class="description">CSS</span>
+                        </div>
+                    </div>
+                    <div class="container-footer">
+                        <img src="img/games-1.jpeg" alt="">
+                        <div class="buttons">
+                            <a href="/games" class="btn">See Demo</a>
+                            <a href="https://github.com/jestov/games" class="btn">See on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details id="blur" class="card">
+            <summary>
+                <img src="img/blur.jpeg">
+                <div class="card-body">
+                  <h2><a href="/blur">Blur</a></h2>
+                </div>
+            </summary>
+            <div class="close">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="container">
+                <div class="container-header" style="background:url(img/blur.jpeg);background-size:cover;background-blend-mode:soft-light;">
+                    <div class="main-title">
+                        <h2>Blur</h2>
+                        <h3>An experiment with blur filter of CSS as background</h3>
+                    </div>
+                    <div class="buttons">
+                      <a href="/blur" class="btn">See Demo</a>
+                      <a href="https://github.com/jestov/blur" class="btn">See on GitHub</a>
+                    </div>
+                </div>
+                <div class="container-body">
+                    <div class="dark-screen">
+                        <p>
+                            Blur is a simple experiment with CSS Filters. Uses it blur filter as background.
+                        </p>
+                    </div>
+                    <div class="dark-screen">
+                        <div class="box-info">
+                            <span class="title">Type</span>
+                            <span class="description">Open Source</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">In</span>
+                            <span class="description">May 2018</span>
+                        </div>
+                        <div class="box-info">
+                            <span class="title">Exploring</span>
+                            <span class="description">CSS Filters</span>
+                        </div>
+                    </div>
+                    <div class="container-footer">
+                        <img src="img/blur.jpeg" alt="">
+                        <div class="buttons">
+                            <a href="/blur" class="btn">See Demo</a>
+                            <a href="https://github.com/jestov/blur" class="btn">See on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </details>
         <footer>
           Made with <i class="icon ion-md-heart"></i> by <a href="https://github.com/jestov">jestov</a>
         </footer>
@@ -120,6 +415,11 @@
             main.classList.add('dark-theme');
             light.hidden = false;
         });
+        const details = document.querySelectorAll('details');
+        const close = document.querySelectorAll('.close');
+        close.forEach(el => el.addEventListener("click", function(){
+            details.forEach(det => det.open = false);
+        }));
     </script>
   </body>
 </html>
