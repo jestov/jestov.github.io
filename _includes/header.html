@@ -1,0 +1,28 @@
+<nav>
+  <a href="/" class="logo">
+    jestov
+  </a>
+  <ul>
+      {% for item in site.data.navigation %}
+          <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>{{ item.name }}</a>
+      {% endfor %}
+  </ul>
+  <!--<details>
+      <summary>
+          <div class="closed">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+          <div class="open">
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </summary>
+      <ul>
+          {% for item in site.data.navigation %}
+              <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>{{ item.name }}</a>
+          {% endfor %}
+      </ul>
+  </details>-->
+</nav>

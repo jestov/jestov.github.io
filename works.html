@@ -1,0 +1,14 @@
+---
+layout: page
+title:  Works
+---
+
+{% for work in site.works %}
+  <li>
+    <span class="post-meta">{{ work.date | date: "%b %-d, %Y" }}</span>
+
+    <h2>
+      <a class="post-link" href="{{ work.url | prepend: site.baseurl }}">{{ work.title }}</a>
+    </h2>
+  </li>
+{% endfor %}

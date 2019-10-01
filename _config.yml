@@ -1,0 +1,37 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: jestov - code drums coffee
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Code, drums and coffee. Big fan of web development, always thinking about to create creative stuff. 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "localhost:4000/" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+plugins_dir:
+  - jekyll-feed
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - .git*
+  - .gitignore
+  - vendor

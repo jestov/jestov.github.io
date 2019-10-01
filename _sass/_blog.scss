@@ -1,0 +1,133 @@
+.post-list {
+  padding: 18vh 10vw;
+
+  .post-item {
+    margin-bottom: 100px;
+    display: flex;
+
+    .post-meta {
+      font-size: 12.5px;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      color: $text-color-02;
+    }
+
+    .post-content {
+      padding: 30px 45px;
+      margin: 25px -30px;
+      position: relative;
+      border: 8px solid;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 42px;
+      font-family: $classic-font-family;
+
+      .post-link {
+        color: $text-color;
+        text-decoration: none;
+      }
+    }
+
+    img {
+      max-width: 50%;
+      object-fit: cover;
+    }
+
+    p {
+      font-size: 13.5px;
+      color: $text-color-03;
+      line-height: 2;
+      margin: 25px 0;
+      text-align: justify;
+    }
+  }
+}
+
+.post {
+  padding: 70px 10vw;
+
+  .post-header,
+  .post-content {
+    padding: 70px 0;
+  }
+
+  .post-title {
+    font-size: 50px;
+    font-weight: normal;
+    margin: 0;
+    color: $text-color;
+    font-family: $classic-font-family;
+  }
+
+  .post-meta {
+    color: $grey-color;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 13.5px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .post-content {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 2.5;
+    color: $text-color-02;
+
+    h2 {
+      font-size: 32px;
+      line-height: 44px;
+      font-family: $classic-font-family;
+    }
+
+    a {
+      text-decoration: none;
+      color: $text-color-03;
+      border-bottom: 3px solid $brand-color;
+      padding-bottom: 5px;
+
+      &:hover {
+        border-bottom-width: 2.5px;
+        color: $text-color-02;
+      }
+    }
+
+    p {
+      margin: 50px 0;
+    }
+  }
+}
+
+.navigation {
+  padding: 0 10vw;
+  padding-bottom: 100px;
+  display: flex;
+
+  .navigation-item {
+    width: 50%;
+    text-decoration: none;
+    margin: 0 20px;
+    
+    .navigation-box {
+      margin: -40px 20px;
+      position: relative;
+      padding: 50px 30px;
+      border: 6px solid #000;
+      padding-bottom: 15px;
+
+      span {
+        color: $text-color-03;
+        letter-spacing: 2px;
+        font-size: 13px;
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
