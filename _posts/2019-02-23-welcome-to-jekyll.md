@@ -3,8 +3,8 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2019-02-23 05:21:18 -0600
 categories: jekyll
-image_sm: /assets/img/wallpaper2.jpg
-image: /assets/img/wallpaper.jpg
+image_sm: https://images.unsplash.com/photo-1478104718532-efe04cc3ff7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80
+image: https://images.unsplash.com/photo-1478104718532-efe04cc3ff7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.

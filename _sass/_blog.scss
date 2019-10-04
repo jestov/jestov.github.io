@@ -1,6 +1,4 @@
 .post-list {
-  padding: 18vh 10vw;
-
   .post-item {
     margin-bottom: 100px;
     display: flex;
@@ -17,22 +15,45 @@
       margin: 25px -30px;
       position: relative;
       border: 8px solid;
+      width: 55%;
+    }
+
+    .post-link {
+      width: 50%;
+      color: $text-color;
+      text-decoration: none;
+      overflow: hidden;
     }
 
     h2 {
       font-weight: normal;
       font-size: 42px;
       font-family: $classic-font-family;
+      margin-bottom: 15px;
 
-      .post-link {
+      a {
         color: $text-color;
         text-decoration: none;
+
+        &:hover {
+          opacity: 0.85;
+        }
       }
     }
 
     img {
-      max-width: 50%;
+      max-width: 100%;
       object-fit: cover;
+      height: 100%;
+      position: relative;
+      -moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      -webkit-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     p {
@@ -41,6 +62,8 @@
       line-height: 2;
       margin: 25px 0;
       text-align: justify;
+      display: inline-block;
+      margin: 15px 0 0 0;
     }
   }
 }
@@ -54,15 +77,16 @@
   }
 
   .post-title {
-    font-size: 50px;
+    font-size: 65px;
     font-weight: normal;
     margin: 0;
+    line-height: 1;
     color: $text-color;
     font-family: $classic-font-family;
   }
 
   .post-meta {
-    color: $grey-color;
+    color: $text-color-03;
     letter-spacing: 2px;
     text-transform: capitalize;
     font-size: 13.5px;
@@ -111,18 +135,21 @@
     width: 50%;
     text-decoration: none;
     margin: 0 20px;
-    
+
     .navigation-box {
       margin: -40px 20px;
       position: relative;
       padding: 50px 30px;
       border: 6px solid #000;
-      padding-bottom: 15px;
 
       span {
         color: $text-color-03;
         letter-spacing: 2px;
         font-size: 13px;
+      }
+
+      h2 {
+        margin-bottom: 0;
       }
     }
 

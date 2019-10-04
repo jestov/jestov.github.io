@@ -1,0 +1,50 @@
+.items-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  .item {
+    width: 50%;
+    margin: 0 0 70px 0;
+    padding: 0 20px;
+
+    .item-link {
+      display: flex;
+      color: $text-color;
+
+      img {
+        max-width: 100%;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+      }
+
+      .item-box {
+        border: 8px solid;
+        padding: 20px 20px 20px 50px;
+        margin: 10px 0 10px -40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        h2 {
+          margin: 0;
+        }
+
+        p {
+          font-size: 13.5px;
+          color: $text-color-03;
+          line-height: 2;
+          text-align: justify;
+          display: inline-block;
+          margin: 15px 0 0 0;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

@@ -3,12 +3,16 @@ layout: page
 title:  Works
 ---
 
-{% for work in site.works %}
-  <li>
-    <span class="post-meta">{{ work.date | date: "%b %-d, %Y" }}</span>
-
-    <h2>
-      <a class="post-link" href="{{ work.url | prepend: site.baseurl }}">{{ work.title }}</a>
-    </h2>
+<ul class="items-list">
+{% for project in site.data.projects | limit:5 %}
+  <li class="item">
+    <a href="{{ post.url }}" class="item-link">
+      <img src="{{ project.image }}" alt="">
+      <div class="item-box">
+        <h2>{{ project.name }}</h2>
+        <p>{{ project.description }}</p>
+      </div>
+    </a>
   </li>
 {% endfor %}
+</ul>
