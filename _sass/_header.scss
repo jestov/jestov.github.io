@@ -91,21 +91,12 @@ details {
 
 
 nav {
-  position: fixed;
   width: 100%;
   z-index: 20;
   padding: 30px 10vw;
   top: 0;
   display: flex;
   justify-content: space-between;
-
-  .logo {
-    color: $text-color;
-    font-size: 32px;
-    text-decoration: none;
-    letter-spacing: -1px;
-    font-family: $classic-font-family;
-  }
 
   ul {
     display: flex;
@@ -117,7 +108,7 @@ nav {
       display: block;
       position: relative;
       margin: 0 30px;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       color: $text-color;
 
       &.active,

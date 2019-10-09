@@ -9,10 +9,6 @@ body {
   box-sizing: border-box;
 }
 
-.text-right{
-  text-align: right;
-}
-
 a {
   text-decoration: none;
 }
@@ -36,19 +32,35 @@ h2 {
   font-size: 42px;
 }
 
+.logo {
+  color: $text-color;
+  font-size: 32px;
+  text-decoration: none;
+  letter-spacing: -1px;
+  font-family: $classic-font-family;
+
+  &.mini {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+
+.text-right{
+  text-align: right;
+}
+
 main {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  min-height: 100vh;
-  padding: 0 10vw;
+  min-height: calc(100vh - 110px);
+  padding: 0 10vw 55px 10vw;
 
   h1 {
     font-size: 80px;
     color: #000;
     line-height: 0.8;
-    letter-spacing: -2px;
     margin: 20px 0;
     font-family: $classic-font-family;
     font-weight: normal;
@@ -74,9 +86,35 @@ main {
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
     width: 50%;
     line-height: 2;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
   }
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 15px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: "DM serif text";
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $text-color;
+
+  .icon {
+    margin: 0 10px;
+  }
+}
+
+
+
+footer {
+  color: $text-color-03;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 20px 0;
+  text-align: right;
 }
