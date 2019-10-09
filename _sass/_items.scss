@@ -2,30 +2,40 @@
   list-style: none;
   padding-left: 0;
   display: flex;
-  flex-wrap: wrap;
   margin-left: -20px;
   margin-right: -20px;
+  flex-direction: column;
+  padding: 60px 0;
 
   .item {
     width: 50%;
-    margin: 0 0 70px 0;
+    margin: -60px 0 0 0;
     padding: 0 20px;
+
+    &:nth-child(2n) {
+      margin-left: auto;
+    }
 
     .item-link {
       display: flex;
       color: $text-color;
 
-      img {
-        max-width: 100%;
+      picture {
         height: 200px;
-        width: 200px;
-        object-fit: cover;
+        min-width: 200px;
+        border: 6px solid;
+
+
+         img {
+           max-width: 100%;
+           object-fit: cover;
+           height: 100%;
+         }
       }
 
       .item-box {
-        border: 8px solid;
-        padding: 20px 20px 20px 50px;
-        margin: 10px 0 10px -40px;
+        padding: 0px 20px 0px 40px;
+        margin: 20px 0 20px 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -33,12 +43,14 @@
 
         h2 {
           margin: 0;
+          font-family: $base-font-family;
+          font-size: 36px;
+          font-weight: 600;
         }
 
         p {
           font-size: 13.5px;
           color: $text-color-03;
-          line-height: 2;
           text-align: justify;
           display: inline-block;
           margin: 15px 0 0 0;

@@ -6,7 +6,7 @@
 - name: hyphev below
   description: An open source CSS Design System
   web: https://tensorflow.org/
-  image: https://jestov.com/img/dark.jpeg
+  image: /assets/img/hb.jpeg
 
 - name: Cool Navbars
   description: A collection of navbars

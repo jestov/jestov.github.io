@@ -7,7 +7,11 @@ title:  Works
 {% for project in site.data.projects | limit:5 %}
   <li class="item">
     <a href="{{ post.url }}" class="item-link">
-      <img src="{{ project.image }}" alt="">
+      <picture>
+        <source media="(max-width: 799px)" srcset="{{ project.image }}">
+        <source media="(min-width: 800px)" srcset="{{ project.image }}">
+        <img src="{{ project.image }}" alt="{{ project.name }}">
+      </picture>
       <div class="item-box">
         <h2>{{ project.name }}</h2>
         <p>{{ project.description }}</p>
