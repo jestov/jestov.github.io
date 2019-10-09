@@ -1,25 +1,50 @@
 .post-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -30px;
+
   .post-item {
-    margin-bottom: 100px;
     display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 30px;
+    margin-bottom: 120px;
+
+    &:first-of-type {
+      width: 100%;
+      flex-direction: row;
+
+      .post-link {
+        width: 50%;
+      }
+
+      .post-content {
+        padding: 60px 30px 60px 60px;
+        margin: 20px -30px;
+        width: 50%;
+      }
+    }
 
     .post-meta {
       font-size: 12.5px;
       text-transform: capitalize;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       color: $text-color-02;
     }
 
     .post-content {
-      padding: 30px 45px;
-      margin: 25px -30px;
+      padding: 60px 30px 60px 30px;
+      margin: -60px 20px;
       position: relative;
       border: 8px solid;
-      width: 55%;
+      width: calc(100% - 40px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .post-link {
-      width: 50%;
+      width: 100%;
       color: $text-color;
       text-decoration: none;
       overflow: hidden;
@@ -27,7 +52,7 @@
 
     h2 {
       font-weight: normal;
-      font-size: 42px;
+      font-size: 30px;
       font-family: $classic-font-family;
       margin-bottom: 15px;
 
@@ -57,10 +82,9 @@
     }
 
     p {
-      font-size: 13.5px;
+      font-size: 12.5px;
       color: $text-color-03;
-      line-height: 2;
-      margin: 25px 0;
+      line-height: 1.8;
       text-align: justify;
       display: inline-block;
       margin: 15px 0 0 0;
@@ -69,11 +93,12 @@
 }
 
 .post {
-  padding: 70px 10vw;
+  padding: 0 10vw;
 
   .post-header,
   .post-content {
-    padding: 70px 0;
+    padding-bottom: 70px;
+    padding-top: 30px;
   }
 
   .post-title {
@@ -97,9 +122,9 @@
   }
 
   .post-content {
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
-    line-height: 2.5;
+    line-height: 2;
     color: $text-color-02;
 
     h2 {
@@ -121,7 +146,7 @@
     }
 
     p {
-      margin: 50px 0;
+      margin-bottom: 40px;
     }
   }
 }
@@ -155,6 +180,23 @@
 
     img {
       max-width: 100%;
+    }
+  }
+}
+
+.pagination {
+  padding: 30px 0;
+  text-align: center;
+  
+  a {
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 14px;
+    color: $text-color;
+
+    &.active {
+      border: 3px solid;
     }
   }
 }
