@@ -9,20 +9,25 @@
 title: jestov - code drums coffee
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Code, drums and coffee. Big fan of web development, always thinking about to create creative stuff. 
+  Code, drums and coffee. Big fan of web development from Mexico, always thinking about to create creative stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "localhost:4000/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+paginate_path: "/blog/page:num/"
+paginate: 5
+
+
 # Build settings
 markdown: kramdown
-plugins_dir:
+plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
