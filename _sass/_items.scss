@@ -4,11 +4,11 @@
   margin-left: -20px;
   margin-right: -20px;
   flex-direction: column;
-  padding: 60px 0;
+  padding: 150px 0 30px 0;
 
   .item {
     width: 50%;
-    margin: -60px 0 0 0;
+    margin: -150px 0 0 0;
     padding: 0 20px;
 
     &:nth-child(2n) {
@@ -20,9 +20,8 @@
       color: $text-color;
 
       picture {
-        height: 200px;
-        min-width: 200px;
-        border: 6px solid;
+        height: 400px;
+        min-width: 250px;
 
         img {
           max-width: 100%;
@@ -32,7 +31,7 @@
       }
 
       .item-box {
-        padding: 0 20px 0 40px;
+        padding: 0 0 0 25px;
         margin: 20px 0 20px 0;
         display: flex;
         flex-direction: column;
@@ -42,17 +41,18 @@
         h2 {
           margin: 0;
           font-family: $base-font-family;
-          font-size: 36px;
+          font-size: 42px;
           font-weight: 600;
+          line-height: 1.1;
         }
 
         p {
-          font-size: 13.5px;
-          color: $text-color-03;
-          text-align: justify;
+          font-size: 12px;
+          color: $text-color;
           display: inline-block;
           margin: 15px 0 0 0;
           letter-spacing: 1px;
+          line-height: 1.5;
         }
       }
     }

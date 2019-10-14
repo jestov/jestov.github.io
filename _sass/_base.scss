@@ -24,8 +24,8 @@ img {
 h1 {
   font-weight: 600;
   letter-spacing: 0;
-  font-size: 42px;
-  margin: 15px 0 40px 0;
+  font-size: 29px;
+  margin: 11px 0 40px 0;
 }
 
 h2 {
@@ -34,6 +34,10 @@ h2 {
   font-family: $classic-font-family;
   font-weight: normal;
   font-size: 42px;
+}
+
+.container {
+  padding: 20vh 0;
 }
 
 .logo {
@@ -58,8 +62,8 @@ main {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  min-height: calc(100vh - 110px);
-  padding: 0 0 55px 0;
+  min-height: 92vh;
+  padding: 30px 10vw 30px 10vw;
 
   h1 {
     font-size: 95px;
@@ -69,6 +73,7 @@ main {
     font-family: $classic-font-family;
     font-weight: normal;
     letter-spacing: -4px;
+    text-align: right;
   }
 
   .big {
@@ -81,15 +86,14 @@ main {
     text-align: center;
     width: 100%;
     line-height: 0.6;
-    -webkit-text-stroke: 1px #000;
+    -webkit-text-stroke: 1px $text-color-03;
     color: transparent;
-    text-shadow: 4px 4px gold;
-    opacity: 0.5;
+    text-shadow: 4px 4px #ff6;
+    opacity: 1;
   }
 
   p {
     font-size: 14px;
-    width: 50%;
     line-height: 2;
     letter-spacing: 4px;
   }
@@ -105,6 +109,9 @@ main {
   font-weight: normal;
   text-transform: uppercase;
   color: $text-color;
+  z-index: 21;
+  position: relative;
+  vertical-align: middle;
 
   &.btn-big {
     font-size: 18px;
@@ -119,6 +126,7 @@ footer {
   color: $text-color-03;
   font-size: 12px;
   letter-spacing: 1px;
-  padding: 20px 0;
+  margin-top: 30px;
+  padding: 30px 0;
   text-align: right;
 }
