@@ -1,19 +1,15 @@
 - name: Grid Gallery
   description: A simple and light Grid Gallery with pure JS
-  web: https://tensorflow.org/
-  image: https://jestov.com/img/gg.jpeg
+  image: /assets/img/gg.jpeg
 
 - name: hyphev below
   description: An open source CSS Design System
-  web: https://tensorflow.org/
   image: /assets/img/hb.jpeg
 
 - name: Cool Navbars
   description: A collection of navbars
-  web: http://miltonolaf.com/glitch-jekyll
   image: /assets/img/cn.jpeg
 
 - name: Universe
   description: A HTML Template as storytelling
-  web: https://feathericons.com/
-  image: https://jestov.com/img/universe.jpeg
+  image: /assets/img/universe.jpeg
