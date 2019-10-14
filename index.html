@@ -8,5 +8,26 @@ layout: default
   <span class="big" style="top: 195px;text-shadow: none;left: -23px;">jestov</span>
   <h1>Hello i'm jestov.<br><small>Code, drums and coffee.</small></h1>
   <p>{{ site.description }}</p>
-  <a href="#works" class="btn btn-big">See my Works <i class="icon ion-md-arrow-forward"></i></a>
+  <a href="#works" class="btn btn-big">See my Works <i class="icon ion-md-arrow-down"></i></a>
 </main>
+
+<div id="works" style="padding-top: 40.5px;">
+  <h1>works <a href="works" class="btn">View more works <i class="icon ion-md-arrow-forward"></i></a></h1>
+  <ul class="items-list">
+  {% for project in site.data.projects | limit: 2 %}
+    <li class="item">
+      <a href="{{ post.url }}" class="item-link">
+        <picture>
+          <source media="(max-width: 799px)" srcset="{{ project.image }}">
+          <source media="(min-width: 800px)" srcset="{{ project.image }}">
+          <img src="{{ project.image }}" alt="{{ project.name }}">
+        </picture>
+        <div class="item-box">
+          <h2>{{ project.name }}</h2>
+          <p>{{ project.description }}</p>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
