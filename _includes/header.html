@@ -4,8 +4,11 @@
   </a>
   <ul>
       {% for item in site.data.navigation %}
-          <a href="{{ item.link }}" {% if page.url contains item.link %}class="active"{% endif %}>{{ item.name }}</a>
+          <a href="{{ item.link }}" class="nav-item {% if page.url contains item.link %}active{% endif %}">{{ item.name }}</a>
       {% endfor %}
+      <ul>
+        {% include icons.html %}
+      </ul>
   </ul>
   <!--<details>
       <summary>
