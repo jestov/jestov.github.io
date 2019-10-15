@@ -1,15 +1,19 @@
 - name: Grid Gallery
   description: A simple and light Grid Gallery with pure JS
   image: /assets/img/gg.jpeg
+  url: /grid-gallery
 
 - name: hyphev below
   description: An open source CSS Design System
   image: /assets/img/hb.jpeg
+  url: https://below.hyphev.com
 
 - name: Cool Navbars
   description: A collection of navbars
   image: /assets/img/cn.jpeg
+  url: cool-navbars
 
 - name: Universe
   description: A HTML Template as storytelling
   image: /assets/img/universe.jpeg
+  url: universe

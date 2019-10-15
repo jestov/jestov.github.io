@@ -6,14 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: jestov - code drums coffee
+title: code, drums & coffee
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Code, drums and coffee. Big fan of web development from Mexico, always thinking about to create creative stuff.
+   I'm a big fan of web development from Mexico, always thinking about to create creative and open source stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "localhost:4000/" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+
+github:  https://github.com/jestov
 
 paginate_path: "/blog/page:num/"
 paginate: 5
