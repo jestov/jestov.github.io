@@ -4,19 +4,24 @@ title:  works
 ---
 
 <ul class="items-list">
-{% for project in site.data.projects | limit:5 %}
+{% for project in site.data.projects %}
   <li class="item">
-    <a href="{{ post.url }}" class="item-link">
-      <picture>
-        <source media="(max-width: 799px)" srcset="{{ project.image }}">
-        <source media="(min-width: 800px)" srcset="{{ project.image }}">
-        <img src="{{ project.image }}" alt="{{ project.name }}">
-      </picture>
+    <div class="item-link">
+        <picture>
+          <a href="{{ project.url }}">
+            <source media="(max-width: 799px)" srcset="{{ project.image }}">
+            <source media="(min-width: 800px)" srcset="{{ project.image }}">
+            <img src="{{ project.image }}" alt="{{ project.name }}">
+          </a>
+        </picture>
       <div class="item-box">
-        <h2>{{ project.name }}</h2>
+        <a href="{{ project.url }}">
+          <h2>{{ project.name }}</h2>
+        </a>
         <p>{{ project.description }}</p>
+        <a href="{{ project.url }}" class="btn">Watch work <i class="icon ion-md-arrow-forward"></i></a>
       </div>
-    </a>
+    </div>
   </li>
 {% endfor %}
 </ul>
