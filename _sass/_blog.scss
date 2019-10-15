@@ -96,7 +96,7 @@
 }
 
 .post {
-  padding: 0 10vw;
+  padding: 5vh 5vw;
 
   .post-header,
   .post-content {
@@ -115,7 +115,7 @@
 
   .post-meta {
     color: $text-color-03;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: capitalize;
     font-size: 13.5px;
   }
@@ -125,7 +125,7 @@
   }
 
   .post-content {
-    font-size: 16px;
+    font-size: 14px;
     text-align: justify;
     line-height: 2;
     color: $text-color-02;
@@ -155,29 +155,27 @@
 }
 
 .navigation {
-  padding: 0 10vw;
-  padding-bottom: 100px;
   display: flex;
+  padding: 0 5vw 50px 5vw;
+  margin: 0 -30px;
 
   .navigation-item {
     width: 50%;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 30px;
 
     .navigation-box {
-      margin: -40px 20px;
-      position: relative;
-      padding: 50px 30px;
-      border: 6px solid #000;
+      padding: 30px 15px;
 
       span {
         color: $text-color-03;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         font-size: 13px;
       }
 
       h2 {
         margin-bottom: 0;
+        font-size: 30px;
       }
     }
 
