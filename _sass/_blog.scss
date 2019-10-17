@@ -10,6 +10,10 @@
     padding: 0 30px;
     margin-bottom: 30px;
 
+    @include media-query($on-palm) {
+      width: 100%;
+    }
+
     .post-meta {
       font-size: 12.5px;
       text-transform: capitalize;
@@ -18,13 +22,18 @@
     }
 
     .post-content {
-      padding: 40px 30px 40px 30px;
+      padding: 40px 30px;
       margin: 0 20px;
       position: relative;
       width: calc(100% - 40px);
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @include media-query($on-palm) {
+        padding: 20px 15px;
+        margin: 0;
+      }
     }
 
     .post-link {
@@ -39,6 +48,10 @@
       font-size: 30px;
       font-family: $classic-font-family;
       margin-bottom: 15px;
+
+      @include media-query($on-palm) {
+        font-size: 24px;
+      }
 
       a {
         color: $text-color;
@@ -75,20 +88,22 @@
     }
 
     &:first-of-type {
-      width: 100%;
-      flex-direction: row;
-      margin-bottom: 80px;
+      @include media-query-02($on-desktop) {
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 80px;
 
-      .post-link {
-        width: 50%;
-      }
+        .post-link {
+          width: 50%;
+        }
 
-      .post-content {
-        padding: 60px 30px 60px 60px;
-        width: 50%;
+        .post-content {
+          padding: 60px 30px 60px 60px;
+          width: 50%;
 
-        h2 {
-          font-size: 42px;
+          h2 {
+            font-size: 42px;
+          }
         }
       }
     }
@@ -98,9 +113,18 @@
 .post {
   padding: 5vh 5vw;
 
+  @include media-query($on-laptop-big) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @include media-query($on-laptop) {
+    padding: 0;
+  }
+
   .post-header,
   .post-content {
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     padding-top: 30px;
   }
 
@@ -111,6 +135,18 @@
     line-height: 1;
     color: $text-color;
     font-family: $classic-font-family;
+
+    @include media-query($on-laptop-big) {
+      font-size: 54px;
+    }
+
+    @include media-query($on-laptop) {
+      font-size: 42px;
+    }
+
+    @include media-query($on-palm) {
+      font-size: 32px;
+    }
   }
 
   .post-meta {
@@ -118,6 +154,10 @@
     letter-spacing: 1px;
     text-transform: capitalize;
     font-size: 13.5px;
+
+    @include media-query($on-laptop) {
+      font-size: 12px;
+    }
   }
 
   img {
@@ -129,6 +169,10 @@
     text-align: justify;
     line-height: 2;
     color: $text-color-02;
+
+    @include media-query($on-laptop) {
+      font-size: 12px;
+    }
 
     h2 {
       font-size: 32px;
@@ -150,6 +194,10 @@
 
     p {
       margin-bottom: 40px;
+
+      @include media-query($on-laptop) {
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -159,13 +207,28 @@
   padding: 0 5vw 50px 5vw;
   margin: 0 -30px;
 
+  @include media-query($on-palm) {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
   .navigation-item {
     width: 50%;
     text-decoration: none;
     margin: 0 30px;
 
+    @include media-query($on-palm) {
+      width: 100%;
+      margin: 0 0 40px 0;
+    }
+
     .navigation-box {
       padding: 30px 15px;
+
+      @include media-query($on-laptop) {
+        padding: 20px 10px;
+      }
 
       span {
         color: $text-color-03;
@@ -176,6 +239,10 @@
       h2 {
         margin-bottom: 0;
         font-size: 30px;
+
+        @include media-query($on-laptop) {
+          font-size: 24px;
+        }
       }
     }
 

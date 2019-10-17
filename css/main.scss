@@ -3,9 +3,6 @@
 ---
 @charset "utf-8";
 
-
-
-// Our variables
 $base-font-family: "Lexend Deca", sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
@@ -23,27 +20,24 @@ $text-color-02:    #222222;
 $text-color-03:    #444444;
 $brand-color:      gold;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm:          500px;
+$on-laptop:        768px;
+$on-laptop-big:    1250px;
+$on-desktop:       1251px;
 
 
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
     }
 }
 
+@mixin media-query-02($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
 
-
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
