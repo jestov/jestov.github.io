@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   margin: 0 -30px;
 
+  @include media-query($on-laptop) {
+    margin: 0 -10px;
+  }
+
   .post-item {
     display: flex;
     flex-direction: column;
@@ -10,12 +14,16 @@
     padding: 0 30px;
     margin-bottom: 30px;
 
+    @include media-query($on-laptop) {
+      padding: 0 10px;
+    }
+
     @include media-query($on-palm) {
       width: 100%;
     }
 
     .post-meta {
-      font-size: 12.5px;
+      font-size: 12px;
       text-transform: capitalize;
       letter-spacing: 1px;
       color: $text-color-02;
@@ -30,8 +38,18 @@
       flex-direction: column;
       justify-content: center;
 
+      @include media-query($on-laptop-big) {
+        padding: 20px 0;
+        width: 100%;
+        margin: 0;
+      }
+
+      @include media-query($on-laptop) {
+        padding: 20px 10px;
+        width: 100%;
+      }
+
       @include media-query($on-palm) {
-        padding: 20px 15px;
         margin: 0;
       }
     }
@@ -49,8 +67,12 @@
       font-family: $classic-font-family;
       margin-bottom: 15px;
 
-      @include media-query($on-palm) {
+      @include media-query($on-laptop-big) {
         font-size: 24px;
+      }
+
+      @include media-query($on-palm) {
+        font-size: 20px;
       }
 
       a {
@@ -79,7 +101,7 @@
     }
 
     p {
-      font-size: 12.5px;
+      font-size: 12px;
       color: $text-color-03;
       line-height: 1.8;
       text-align: justify;
@@ -126,6 +148,15 @@
   .post-content {
     padding-bottom: 40px;
     padding-top: 30px;
+
+    @include media-query($on-laptop-big) {
+      padding-top: 0;
+      padding-bottom: 25px;
+    }
+
+    @include media-query($on-laptop) {
+      padding-bottom: 20px;
+    }
   }
 
   .post-title {
@@ -137,15 +168,15 @@
     font-family: $classic-font-family;
 
     @include media-query($on-laptop-big) {
-      font-size: 54px;
-    }
-
-    @include media-query($on-laptop) {
       font-size: 42px;
     }
 
+    @include media-query($on-laptop) {
+      font-size: 38px;
+    }
+
     @include media-query($on-palm) {
-      font-size: 32px;
+      font-size: 28px;
     }
   }
 
@@ -240,7 +271,7 @@
         margin-bottom: 0;
         font-size: 30px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-laptop-big) {
           font-size: 24px;
         }
       }
@@ -254,17 +285,30 @@
 
 .pagination {
   padding: 30px 0;
-  text-align: center;
 
   a {
     padding: 10px 15px;
     display: inline-block;
-    margin: 0 10px;
-    font-size: 14px;
+    margin: 0 5px;
+    font-size: 12px;
     color: $text-color;
+    position: relative;
 
-    &.active {
-      border: 3px solid;
+    &.active::after {
+      content: '';
+      width: 10px;
+      max-width: 100%;
+      height: 2px;
+      position: absolute;
+      background: $text-color;
+      opacity: 1;
+      top: 30px;
+      z-index: 1;
+      -moz-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      -webkit-transition: all 0.8s ease;
+      transition: all 0.8s ease;
+      left: 13px;
     }
   }
 }
