@@ -20,6 +20,7 @@
 
     @include media-query($on-palm) {
       width: 100%;
+      margin-bottom: 10px;
     }
 
     .post-meta {
@@ -107,6 +108,10 @@
       text-align: justify;
       display: inline-block;
       margin: 15px 0 0 0;
+
+      @include media-query($on-palm) {
+        display: none;
+      }
     }
 
     &:first-of-type {
@@ -214,11 +219,11 @@
     a {
       text-decoration: none;
       color: $text-color-03;
-      border-bottom: 3px solid $brand-color;
+      border-bottom: 2px solid $brand-color;
       padding-bottom: 5px;
 
       &:hover {
-        border-bottom-width: 2.5px;
+        border-bottom-width: 1px;
         color: $text-color-02;
       }
     }
@@ -294,6 +299,12 @@
     color: $text-color;
     position: relative;
 
+    @include media-query($on-palm) {
+      margin-left: 2px;
+      margin-right: 2px;
+      padding: 10px;
+    }
+
     &.active::after {
       content: '';
       width: 10px;
@@ -309,6 +320,10 @@
       -webkit-transition: all 0.8s ease;
       transition: all 0.8s ease;
       left: 13px;
+
+      @include media-query($on-palm) {
+        left: 8px;
+      }
     }
   }
 }
