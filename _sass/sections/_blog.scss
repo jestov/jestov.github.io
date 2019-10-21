@@ -75,15 +75,6 @@
       @include media-query($on-palm) {
         font-size: 20px;
       }
-
-      a {
-        color: $text-color;
-        text-decoration: none;
-
-        &:hover {
-          opacity: 0.85;
-        }
-      }
     }
 
     img {
@@ -115,7 +106,7 @@
     }
 
     &:first-of-type {
-      @include media-query-02($on-desktop) {
+      @include media-query-min($on-desktop) {
         width: 100%;
         flex-direction: row;
         margin-bottom: 80px;
@@ -217,8 +208,7 @@
     }
 
     a {
-      text-decoration: none;
-      color: $text-color-03;
+      font-weight: 600;
       border-bottom: 2px solid $brand-color;
       padding-bottom: 5px;
 
@@ -270,6 +260,10 @@
         color: $text-color-03;
         letter-spacing: 1px;
         font-size: 13px;
+
+        @include media-query($on-palm) {
+          font-size: 11px;
+        }
       }
 
       h2 {
@@ -296,7 +290,6 @@
     display: inline-block;
     margin: 0 5px;
     font-size: 12px;
-    color: $text-color;
     position: relative;
 
     @include media-query($on-palm) {

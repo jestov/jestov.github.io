@@ -1,47 +1,7 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
-$base-font-family: "Lexend Deca", sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$classic-font-family: "DM Serif Text", serif;
-
-$spacing-unit:     30px;
-
-$bg-color:         #FFFFFF;
-$bg-color-02:      #111111;
-$text-color:       #000000;
-$text-color-02:    #222222;
-$text-color-03:    #444444;
-$brand-color:      gold;
-
-$on-palm:          550px;
-$on-laptop:        768px;
-$on-laptop-big:    1250px;
-$on-desktop:       1251px;
-
-
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-@mixin media-query-02($device) {
-    @media screen and (min-width: $device) {
-        @content;
-    }
-}
-
 @import
-        "base",
-        "layout",
-        "header",
-        "blog",
-        "items"
+  "index.scss"
 ;
