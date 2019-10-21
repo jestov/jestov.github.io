@@ -1,0 +1,95 @@
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 95vh;
+  position: relative;
+  padding: 30px 10vw 30px 10vw;
+
+  @include media-query($on-laptop-big) {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  @include media-query($on-laptop) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  h1 {
+    font-size: 85px;
+    color: #000;
+    line-height: 0.8;
+    margin: 20px 0;
+    font-family: $classic-font-family;
+    font-weight: normal;
+    letter-spacing: -2px;
+    text-align: right;
+    width: 100%;
+
+    @include media-query($on-laptop) {
+      font-size: 70px;
+    }
+
+    @include media-query($on-palm) {
+      font-size: 50px;
+    }
+  }
+
+  p {
+    line-height: 2;
+    letter-spacing: 2px;
+    width: 50%;
+
+    @include media-query($on-laptop) {
+      width: 75%;
+      letter-spacing: 1px;
+    }
+
+    @include media-query($on-palm) {
+      width: 100%;
+    }
+  }
+}
+
+
+.big {
+  font-size: 350px;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  letter-spacing: -15px;
+  font-family: $classic-font-family;
+  text-align: center;
+  width: 100%;
+  line-height: 0.6;
+  -webkit-text-stroke: 1px $text-color-03;
+  color: transparent;
+  text-shadow: 4px 4px $brand-color-02;
+  top: 0;
+
+  @include media-query($on-laptop) {
+    font-size: 300px;
+    margin: 80px -20px;
+  }
+
+  @include media-query($on-palm) {
+    font-size: 200px;
+    letter-spacing: -10px;
+  }
+
+  &:nth-of-type(2),
+  &:nth-of-type(3) {
+    text-shadow: none;
+  }
+
+  &:nth-of-type(2) {
+    top: 2px;
+    left: -5px;
+  }
+
+  &:nth-of-type(3) {
+    top: -3px;
+    left: -4px;
+  }
+}

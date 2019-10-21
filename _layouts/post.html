@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+      {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+       -
+      {% for category in page.categories %}
+        <span class="category">{{ category }}</span>
+      {% endfor %}
+    </p>
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+  </header>
+  <img src="{{ page.image }}" alt="">
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>
+
+<div class="navigation">
+  {% if page.previous.url %}
+    <a class="navigation-item prev" href="{{ page.previous.url }}">
+      <img src="{{ page.previous.image }}" alt="">
+      <div class="navigation-box">
+        <span>← Previous</span>
+        <h2>{{ page.previous.title }}</h2>
+      </div>
+    </a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="navigation-item next" href="{{ page.next.url }}">
+      <img src="{{ page.next.image }}" alt="">
+      <div class="navigation-box text-right">
+        <span>Next →</span>
+        <h2>{{ page.next.title }}</h2>
+      </div>
+    </a>
+  {% endif %}
+</div>

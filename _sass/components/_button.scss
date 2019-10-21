@@ -1,0 +1,26 @@
+.btn {
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 15px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: $classic-font-family;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $text-color;
+  z-index: 21;
+  position: relative;
+  vertical-align: middle;
+
+  @include media-query($on-palm) {
+    letter-spacing: 0;
+  }
+
+  .icon {
+    margin: 0 10px;
+
+    @include media-query($on-palm) {
+      margin: 0 5px;
+    }
+  }
+}

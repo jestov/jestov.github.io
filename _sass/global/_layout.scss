@@ -1,0 +1,23 @@
+.content {
+  padding: 45px 150px 5vh 150px;
+
+  @include media-query($on-laptop-big) {
+    padding: 20px 120px 0 120px;
+  }
+
+  @include media-query($on-laptop) {
+    padding: 65px 20px 0 20px;
+  }
+}
+
+.section {
+  padding-top: 44.5px;
+
+  @include media-query($on-laptop) {
+    padding-top: 65px;
+  }
+}
+
+.container {
+  padding: 20vh 0;
+}

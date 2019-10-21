@@ -1,0 +1,32 @@
+h1 {
+  font-weight: 600;
+  letter-spacing: 0;
+  font-size: 29px;
+  margin: 2.99px 0 40px 0;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  .btn {
+    display: block;
+    margin: 0;
+  }
+}
+
+h2 {
+  line-height: 1;
+  font-family: $classic-font-family;
+  font-weight: normal;
+  font-size: 42px;
+
+  @include media-query($on-laptop) {
+    font-size: 32px;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
