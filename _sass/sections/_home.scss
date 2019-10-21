@@ -56,7 +56,7 @@ main {
 .big {
   font-size: 350px;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   left: 0;
   letter-spacing: -15px;
   font-family: $classic-font-family;
