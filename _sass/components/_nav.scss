@@ -62,6 +62,12 @@ nav {
           -webkit-transition: all 0.8s ease;
           transition: all 0.8s ease;
           left: -2px;
+
+          @include media-query($on-laptop) {
+            width: 35px;
+            height: 3px;
+            top: 12px;
+          }
         }
       }
 
@@ -73,6 +79,10 @@ nav {
 
       &.icon {
         font-size: 18px;
+
+        @include media-query($on-laptop) {
+          font-size: 24px;
+        }
       }
     }
 
@@ -104,9 +114,11 @@ nav {
 
       a {
         pointer-events: auto;
-        margin: 10px;
-        font-size: 18px;
+        margin: 12px;
+        font-size: 24px;
         font-weight: 600;
+        letter-spacing: 0;
+        line-height: 1;
       }
     }
 
