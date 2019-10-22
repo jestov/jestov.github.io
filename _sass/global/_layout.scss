@@ -21,3 +21,9 @@
 .container {
   padding: 20vh 0;
 }
+
+.mt-6 {
+  @include media-query-min($on-laptop) {
+    margin-top: 60px;
+  }
+}
