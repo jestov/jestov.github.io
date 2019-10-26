@@ -16,7 +16,7 @@
     letter-spacing: 0;
   }
 
-  .icon {
+  .icon:not(.icon-left) {
     margin: 0 10px;
 
     @include media-query($on-palm) {
