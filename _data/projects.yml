@@ -11,9 +11,9 @@
 - name: Cool Navbars
   description: A collection of navbars
   image: /assets/img/cn.jpeg
-  url: cool-navbars
+  url: /cool-navbars
 
 - name: Universe
   description: A HTML Template as storytelling
   image: /assets/img/universe.jpeg
-  url: universe
+  url: /universe
