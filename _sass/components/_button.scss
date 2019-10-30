@@ -7,20 +7,27 @@
   font-family: $classic-font-family;
   font-weight: normal;
   text-transform: uppercase;
-  color: $text-color;
   z-index: 21;
   position: relative;
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
   vertical-align: middle;
 
   @include media-query($on-palm) {
     letter-spacing: 0;
   }
 
-  .icon:not(.icon-left) {
+  .icon {
     margin: 0 10px;
 
     @include media-query($on-palm) {
       margin: 0 5px;
+    }
+
+    &.icon-left {
+      margin: 0 2px 0 0;
     }
   }
 }
