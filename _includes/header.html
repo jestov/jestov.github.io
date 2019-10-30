@@ -4,41 +4,36 @@
   </a>
   <div class="group-menu">
     <ul class="menu menu-large">
+      {% for item in site.data.navigation %}
+          <a href="{{ item.link }}" class="nav-item {% if page.url contains item.link %}active{% endif %}">{{ item.name }}</a>
+      {% endfor %}
+      <ul class="menu">
+        {% include icons.html %}
+      </ul>
+    </ul>
+    <ul class="menu">
+      {% include theme-buttons.html %}
+    </ul>
+    <details>
+      <summary>
+        <div class="closed">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="open">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </summary>
+      <ul class="menu menu-responsive">
         {% for item in site.data.navigation %}
-            <a href="{{ item.link }}" class="nav-item {% if page.url contains item.link %}active{% endif %}">{{ item.name }}</a>
+            <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>{{ item.name }}</a>
         {% endfor %}
         <ul class="menu">
           {% include icons.html %}
         </ul>
-    </ul>
-    <ul class="menu">
-      <a id="dark" class="btn btn-theme dark" title="Dark Mode">
-        <i class="icon icon-left ion-md-moon"></i> Dark
-      </a>
-      <a id="light" class="btn btn-theme light" title="Light Mode">
-        <i class="icon icon-left ion-md-sunny"></i> Light
-      </a>
-    </ul>
-  <details>
-      <summary>
-          <div class="closed">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-          </div>
-          <div class="open">
-              <span class="bar"></span>
-              <span class="bar"></span>
-          </div>
-      </summary>
-      <ul class="menu menu-responsive">
-          {% for item in site.data.navigation %}
-              <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>{{ item.name }}</a>
-          {% endfor %}
-          <ul class="menu">
-            {% include icons.html %}
-          </ul>
       </ul>
-  </details>
+    </details>
   </div>
 </nav>
