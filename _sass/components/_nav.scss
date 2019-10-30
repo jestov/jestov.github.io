@@ -16,12 +16,23 @@ nav {
     padding: 10px 20px;
     z-index: 22;
     align-items: center;
-    background: #fff;
+    background: var(--bg-color);
   }
 
   @include media-query($on-palm) {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 15px;
+  }
+
+  @include media-query($on-palm-sm) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .group-menu {
+    @include media-query($on-laptop) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   .menu {
@@ -43,17 +54,20 @@ nav {
       letter-spacing: 1px;
       pointer-events: auto;
 
-      &:not(.icon).active,
-      &:not(.icon):hover {
-        color: $bg-color-02;
+      @include media-query($on-laptop) {
+        letter-spacing: 0;
+        padding: 0;
+      }
 
+      &:not(.icon):not(.btn).active,
+      &:not(.icon):not(.btn):hover {
         &::after {
           content: '';
           width: 30px;
           max-width: 100%;
           height: 2px;
           position: absolute;
-          background: gold;
+          background: $brand-color-02;
           opacity: 1;
           top: 9px;
           z-index: 1;
@@ -71,9 +85,9 @@ nav {
         }
       }
 
-      &:not(.icon):hover {
+      &:not(.icon):not(.btn):hover {
         &::after {
-          background: $text-color;
+          background: var(--text-color);
         }
       }
 
@@ -97,7 +111,7 @@ nav {
 
     .menu-responsive {
       position: fixed;
-      background: #fff;
+      background: var(--bg-color);
       width: 100%;
       height: 100%;
       top: 0;
@@ -117,14 +131,13 @@ nav {
         margin: 12px;
         font-size: 24px;
         font-weight: 600;
-        letter-spacing: 0;
         line-height: 1;
       }
     }
 
     .bar {
       height: 2px;
-      background: $text-color;
+      background: var(--text-color);
       display: block;
       margin: 4px auto;
       -moz-transition: all 0.4s ease;
@@ -139,13 +152,13 @@ nav {
     }
 
     summary {
-      width: 40px;
       height: 40px;
       list-style: none;
       cursor: pointer;
       position: relative;
       z-index: 23;
       pointer-events: auto;
+      margin-left: 10px;
 
       .open {
         display: none;

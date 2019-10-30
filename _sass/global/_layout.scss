@@ -8,6 +8,16 @@
   @include media-query($on-laptop) {
     padding: 65px 20px 0 20px;
   }
+
+  @include media-query($on-palm) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  @include media-query($on-palm-sm) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 .section {

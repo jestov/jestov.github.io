@@ -2,14 +2,23 @@
   <a href="/" class="logo">
     jestov
   </a>
-  <ul class="menu menu-large">
-      {% for item in site.data.navigation %}
-          <a href="{{ item.link }}" class="nav-item {% if page.url contains item.link %}active{% endif %}">{{ item.name }}</a>
-      {% endfor %}
-      <ul class="menu">
-        {% include icons.html %}
-      </ul>
-  </ul>
+  <div class="group-menu">
+    <ul class="menu menu-large">
+        {% for item in site.data.navigation %}
+            <a href="{{ item.link }}" class="nav-item {% if page.url contains item.link %}active{% endif %}">{{ item.name }}</a>
+        {% endfor %}
+        <ul class="menu">
+          {% include icons.html %}
+        </ul>
+    </ul>
+    <ul class="menu">
+      <a id="dark" class="btn btn-theme dark" title="Dark Mode">
+        <i class="icon icon-left ion-md-moon"></i> Dark
+      </a>
+      <a id="light" class="btn btn-theme light" title="Light Mode">
+        <i class="icon icon-left ion-md-sunny"></i> Light
+      </a>
+    </ul>
   <details>
       <summary>
           <div class="closed">
@@ -31,4 +40,5 @@
           </ul>
       </ul>
   </details>
+  </div>
 </nav>

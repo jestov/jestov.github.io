@@ -3,14 +3,23 @@ $classic-font-family: "DM Serif Text", serif;
 $base-font-size:   12px;
 
 
-$bg-color:         #FFFFFF;
-$bg-color-02:      #111111;
-$text-color:       #000000;
-$text-color-02:    #222222;
-$text-color-03:    #444444;
-$brand-color:         gold;
-$brand-color-02:      #ff6;
+@mixin dark-theme {
+  --bg-color: #111;
+  --text-color: #c3b6a2;
+  --text-color-02: #ccc;
+  --text-color-03: #777;
+  --brand-color: #2d3436;
+}
 
+@mixin light-theme {
+  --bg-color: #fff;
+  --text-color: #000;
+  --text-color-02: #222;
+  --text-color-03: #444;
+  --brand-color: #ff6;
+}
+
+$brand-color-02:      gold;
 
 $on-palm-sm:       380px;
 $on-palm:          550px;
