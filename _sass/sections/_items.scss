@@ -28,7 +28,7 @@
         margin-left: auto;
 
 
-      .item-link {
+      .item-container {
         @include media-query-min-max($on-palm-sm, $on-laptop-big) {
           flex-direction: row-reverse;
         }
@@ -45,7 +45,7 @@
       }
     }
 
-    .item-link {
+    .item-container {
       display: flex;
 
 
@@ -104,7 +104,7 @@
         }
 
         p {
-          font-size: 12px;      
+          font-size: 12px;
           display: inline-block;
           margin: 15px 0 0 0;
           letter-spacing: 1px;
