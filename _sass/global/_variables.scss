@@ -9,6 +9,7 @@ $base-font-size:   12px;
   --text-color-02: #ccc;
   --text-color-03: #777;
   --brand-color: #2d3436;
+  --brand-color-02: #5725c6;
 }
 
 @mixin light-theme {
@@ -17,9 +18,8 @@ $base-font-size:   12px;
   --text-color-02: #222;
   --text-color-03: #444;
   --brand-color: #ff6;
+  --brand-color-02: gold;
 }
-
-$brand-color-02:      gold;
 
 $on-palm-sm:       380px;
 $on-palm:          550px;

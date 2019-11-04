@@ -67,7 +67,7 @@ nav {
           max-width: 100%;
           height: 2px;
           position: absolute;
-          background: $brand-color-02;
+          background: var(--brand-color-02);
           opacity: 1;
           top: 9px;
           z-index: 1;
