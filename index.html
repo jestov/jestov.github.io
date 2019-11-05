@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
-<span class="big">jestov</span>
-<span class="big">jestov</span>
-<span class="big">jestov</span>
+{% include logo.html %}
 <main>
   <h1>Hello i'm jestov.<br><small>Code, drums and coffee.</small></h1>
   <p>{{ site.description }}</p>
@@ -14,22 +12,7 @@ layout: default
   <h1>works <a href="works" class="btn">View more works <i class="icon ion-md-arrow-forward"></i></a></h1>
   <ul class="items-list">
   {% for project in site.data.projects limit: 2 %}
-    <li class="item">
-      <div class="item-link">
-          <picture>
-            <a href="{{ project.url }}">
-              <img src="{{ project.image }}" alt="{{ project.name }}">
-            </a>
-          </picture>
-        <div class="item-box">
-          <a href="{{ project.url }}">
-            <h2>{{ project.name }}</h2>
-          </a>
-          <p>{{ project.description }}</p>
-          <a href="{{ project.url }}" class="btn">Watch work <i class="icon ion-md-arrow-forward"></i></a>
-        </div>
-      </div>
-    </li>
+    {% include work.html %}
   {% endfor %}
   </ul>
 </div>

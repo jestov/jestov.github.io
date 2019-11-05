@@ -24,7 +24,6 @@
     }
 
     .post-meta {
-      font-size: 12px;
       text-transform: capitalize;
       letter-spacing: 1px;
       color: var(--text-color-02);
@@ -92,7 +91,6 @@
     }
 
     p {
-      font-size: 12px;
       color: var(--text-color-03);
       line-height: 1.8;
       text-align: justify;
@@ -207,7 +205,7 @@
 
     a {
       font-weight: 600;
-      border-bottom: 2px solid $brand-color-02;
+      border-bottom: 2px solid var(--brand-color-02);
       padding-bottom: 5px;
 
       &:hover {
@@ -287,7 +285,6 @@
     padding: 10px 15px;
     display: inline-block;
     margin: 0 5px;
-    font-size: 12px;
     position: relative;
 
     @include media-query($on-palm) {

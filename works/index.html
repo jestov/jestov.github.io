@@ -5,23 +5,6 @@ title:  works
 
 <ul class="items-list">
 {% for project in site.data.projects %}
-  <li class="item">
-    <div class="item-link">
-        <picture>
-          <a href="{{ project.url }}">
-            <source media="(max-width: 799px)" srcset="{{ project.image }}">
-            <source media="(min-width: 800px)" srcset="{{ project.image }}">
-            <img src="{{ project.image }}" alt="{{ project.name }}">
-          </a>
-        </picture>
-      <div class="item-box">
-        <a href="{{ project.url }}">
-          <h2>{{ project.name }}</h2>
-        </a>
-        <p>{{ project.description }}</p>
-        <a href="{{ project.url }}" class="btn">Watch work <i class="icon ion-md-arrow-forward"></i></a>
-      </div>
-    </div>
-  </li>
+  {% include work.html %}
 {% endfor %}
 </ul>
